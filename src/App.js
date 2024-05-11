@@ -2,9 +2,11 @@
 
 import "./App.css";
 import LoginButton from "./components/LoginButton";
+import React, { useEffect, useState } from "react";
 import LogoutButton from "./components/LogoutButton";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { useAuth0 } from "@auth0/auth0-react";
+// const { Auth0Client } = require("@auth0/auth0-spa-js");
 function App() {
   return (
     <>
@@ -15,6 +17,8 @@ function App() {
       </nav>
       <LoginButton />
       <LogoutButton />
+      
+  
     </>
   );
 }
